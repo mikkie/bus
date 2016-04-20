@@ -95,4 +95,12 @@ public class LoginController {
 		}
 		return false;
 	}
+	
+	
+	@RequestMapping("/logout")
+	public String logout(){
+		Subject currentUser = SecurityUtils.getSubject();
+		currentUser.logout();
+		return "redirect:/login";
+	}
 }

@@ -31,6 +31,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
+              <a href="${ctx}/login/logout">退出</a>
             </li>  
           </ul>
         </nav>
